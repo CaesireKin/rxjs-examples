@@ -1,0 +1,20 @@
+{
+  "name": "rxjs_examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.5.5",
+    "tslib": "^1.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "@types/rx-node": "0.0.5"
+  }
+}
