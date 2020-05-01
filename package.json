@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node ./dist/index.js"
+    "start": "tsc && node ./dist/index.js",
+    "watch": "tsc -w && karma start"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +15,17 @@
     "tslib": "^1.11.1"
   },
   "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/jasminewd2": "^2.0.8",
     "@types/node": "^13.13.4",
-    "@types/rx-node": "0.0.5"
+    "@types/rx-node": "0.0.5",
+    "jasmine-core": "^3.5.0",
+    "jasmine-spec-reporter": "^5.0.2",
+    "karma": "^5.0.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-commonjs": "^1.0.0",
+    "karma-coverage-istanbul-reporter": "^3.0.0",
+    "karma-jasmine": "^3.1.1",
+    "karma-jasmine-html-reporter": "^1.5.3"
   }
 }

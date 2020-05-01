@@ -1,7 +1,4 @@
-import {ForkJoinExample} from "./fork_join_examples/fork_join_example";
-import {ErrorHandingExample} from "./error_handing_examples/error_handing_example";
 import {ConcatExample} from "./concat_examples/concat_example";
-import {ZipExample} from "./zip_examples/zip_example";
 
 export class Main {
     public static main(): void {
@@ -14,14 +11,14 @@ export class Main {
         //     error => { console.log('error: %o', error); }
         // )
 
-        // const concatExample = new ConcatExample();
-        // concatExample.example().subscribe(
-        //     next => console.log('emit: %o', next)
-        // );
-
-        const zipExample = new ZipExample();
-        zipExample.example().subscribe(
+        const concatExample = new ConcatExample();
+        concatExample.example().subscribe(
             next => console.log('emit: %o', next)
         );
+
+        // const zipExample = new ZipExample();
+        // zipExample.example().subscribe(
+        //     next => console.log('emit: %o', next)
+        // );
     }
 }
