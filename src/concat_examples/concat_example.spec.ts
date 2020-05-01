@@ -7,5 +7,7 @@ describe('ConcatExample', () => {
         concatExample = new ConcatExample();
     });
 
-    it('should ');
+    it('should output [1, 2, 3]', () => {
+
+    });
 });
